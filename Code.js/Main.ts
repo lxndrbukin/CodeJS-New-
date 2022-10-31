@@ -1,7 +1,7 @@
 export interface CodeElement {
   tag: string;
   attrs?: Object;
-  content?: Node[];
+  content?: Node | Node[];
   events?: Object;
 }
 
@@ -19,15 +19,20 @@ export class CodeComponent {
         if (component instanceof Array<Node>) {
           component.map((componentElement: Node): void => {
             el.appendChild(
-              componentElement.nodeType === undefined || typeof componentElement === 'string' ? document.createTextNode(componentElement.toString()) : componentElement
+              componentElement.nodeType === undefined ? document.createTextNode(componentElement.toString()) : componentElement
             )
           })
-        } else if (component instanceof Node) {
-          el.appendChild(
-            component.nodeType === undefined || typeof component === 'string' ? document.createTextNode(component.toString()) : component
-          )
+        } else if (component instanceof Node || typeof component === 'string') {
+          if (component.nodeType === undefined) {
+            el.innerHTML += component;
+          } else {
+            el.appendChild(component)
+          }
+          
         }
       });
+    } else if (typeof content === 'string') {
+      el.innerHTML += content;
     }
     if (attrs) {
       for (let attrKey in attrs) {

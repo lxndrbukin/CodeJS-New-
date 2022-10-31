@@ -1,4 +1,4 @@
-import { BrowserRouter } from '../Code.JS/Router';
+import { BrowserRouter } from '../Code.js/Router';
 import Homepage from './components/Homepage';
 import UsersPage from './components/UsersPage';
 

@@ -1,4 +1,4 @@
-import { CodeComponent } from '../../Code.JS/Main';
+import { CodeComponent } from '../../Code.js/Main';
 import Dummy from './Dummy';
 import DummyTwo from './DummyTwo';
 
@@ -7,7 +7,7 @@ const Homepage = new CodeComponent({
   attrs: {
     class: 'homepage',
   },
-  content: [Dummy, DummyTwo],
+  content: [Dummy, DummyTwo, 'Hi'],
 }).createElement();
 
 export default Homepage;

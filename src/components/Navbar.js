@@ -1,5 +1,5 @@
-import { CodeComponent } from '../../Code.JS/Main';
-import { CodeLink } from '../../Code.JS/Router';
+import { CodeComponent } from '../../Code.js/Main';
+import { CodeLink } from '../../Code.js/Router';
 
 const links = [
   {
