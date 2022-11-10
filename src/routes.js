@@ -1,10 +1,10 @@
-import { BrowserRouter } from '../Code.js/Router';
+import { CodeRouter } from '../Code.js/CodeRouter';
 import Homepage from './components/Homepage';
 import UsersPage from './components/UsersPage';
 
-const Router = new BrowserRouter([
+const Router = CodeRouter.createRouter([
   { pathname: '/', component: Homepage },
   { pathname: '/users', component: UsersPage },
-]).createRouter();
+]);
 
 export default Router;

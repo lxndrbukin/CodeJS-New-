@@ -1,15 +1,15 @@
-import { CodeComponent } from '../../Code.js/Main';
+import { Code } from '../../Code.js/Code';
 
 const html = /*html*/ `
   <div class='another'>Another</div>
 `;
 
-const Dummy = new CodeComponent({
+const Dummy = Code.createElement({
   tag: 'div',
   attrs: {
     class: 'dummy',
   },
   content: ['Dummy', html],
-}).createElement();
+});
 
 export default Dummy;

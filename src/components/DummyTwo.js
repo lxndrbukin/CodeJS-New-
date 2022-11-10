@@ -1,11 +1,11 @@
-import { CodeComponent } from '../../Code.js/Main';
+import { Code } from '../../Code.js/Code';
 
-const DummyTwo = new CodeComponent({
+const DummyTwo = Code.createElement({
   tag: 'div',
   attrs: {
     class: 'dummy',
   },
   content: ['DummyTwo'],
-}).createElement();
+});
 
 export default DummyTwo;

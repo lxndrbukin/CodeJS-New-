@@ -1,18 +1,16 @@
-import { CodeApp, CodeComponent } from '../Code.js/Main';
+import { Code } from '../Code.js/Code';
 import Navbar from './components/Navbar';
 import Router from './routes';
 
-const App = new CodeComponent({
+const App = Code.createElement({
   tag: 'div',
   attrs: {
     class: 'container',
   },
-  content: [Navbar, Router],
-}).createElement();
+  content: 'Hello',
+});
 
-const codeApp = new CodeApp({
+Code.createApp({
   appComponent: App,
   rootElement: document.querySelector('#app'),
 });
-
-codeApp.create();

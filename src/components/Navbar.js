@@ -1,5 +1,5 @@
-import { CodeComponent } from '../../Code.js/Main';
-import { CodeLink } from '../../Code.js/Router';
+import { Code } from '../../Code.js/Code';
+import { CodeRouter } from '../../Code.js/CodeRouter';
 
 const links = [
   {
@@ -13,21 +13,21 @@ const links = [
 ];
 
 const NavbarLinks = links.map((link) => {
-  return new CodeLink({
+  return CodeRouter.createLink({
     attrs: {
       href: link.path,
       class: 'link',
     },
     content: link.name,
-  }).createLink();
+  });
 });
 
-const Navbar = new CodeComponent({
+const Navbar = Code.createElement({
   tag: 'div',
   attrs: {
     class: 'navbar',
   },
   content: NavbarLinks,
-}).createElement();
+});
 
 export default Navbar;

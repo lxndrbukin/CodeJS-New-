@@ -1,11 +1,11 @@
-import { CodeComponent } from '../../Code.js/Main';
+import { Code } from '../../Code.js/Code';
 
-const UsersPage = new CodeComponent({
+const UsersPage = Code.createElement({
   tag: 'div',
   attrs: {
     class: 'users',
   },
   content: ['Users page'],
-}).createElement();
+});
 
 export default UsersPage;

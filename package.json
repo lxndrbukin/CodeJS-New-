@@ -2,7 +2,7 @@
   "name": "framework",
   "version": "1.0.0",
   "description": "",
-  "main": "Altai.js",
+  "main": "Code.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
