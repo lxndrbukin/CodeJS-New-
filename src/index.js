@@ -1,16 +1,7 @@
-import { Code } from '../Code.js/Code';
-import Navbar from './components/Navbar';
-import Router from './routes';
+import { createApp } from '../Code.js/Code';
+import App from './components/App';
 
-const App = Code.createElement({
-  tag: 'div',
-  attrs: {
-    class: 'container',
-  },
-  content: 'Hello',
-});
-
-Code.createApp({
+createApp({
   appComponent: App,
   rootElement: document.querySelector('#app'),
 });

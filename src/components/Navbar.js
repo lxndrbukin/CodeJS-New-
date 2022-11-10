@@ -1,4 +1,4 @@
-import { Code } from '../../Code.js/Code';
+import Code from '../../Code.js/Code';
 import { CodeRouter } from '../../Code.js/CodeRouter';
 
 const links = [

@@ -1,4 +1,4 @@
-import { Code } from '../../Code.js/Code';
+import Code from '../../Code.js/Code';
 import Dummy from './Dummy';
 import DummyTwo from './DummyTwo';
 // import style from '/';

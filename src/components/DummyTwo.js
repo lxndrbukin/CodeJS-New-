@@ -1,4 +1,4 @@
-import { Code } from '../../Code.js/Code';
+import Code from '../../Code.js/Code';
 
 const DummyTwo = Code.createElement({
   tag: 'div',

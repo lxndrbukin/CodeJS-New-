@@ -1,4 +1,5 @@
-import { CodeElementInterface, Code } from './Code';
+import { CodeElementInterface } from './Code';
+import Code from './Code';
 
 interface RouterPath {
   pathname: string;

@@ -1,4 +1,4 @@
-import { Code } from '../../Code.js/Code';
+import Code from '../../Code.js/Code';
 
 const UsersPage = Code.createElement({
   tag: 'div',
